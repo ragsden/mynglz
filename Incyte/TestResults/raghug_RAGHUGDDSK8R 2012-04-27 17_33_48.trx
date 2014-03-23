@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="3cc9f05a-e99b-4457-b9e9-7ce1cf4fcc9a" name="raghug@RAGHUGDDSK8R 2012-04-27 17:33:48" runUser="REDMOND\raghug" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="0a033359-9003-4ffc-8645-7fa61a9369c1">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="raghug_RAGHUGDDSK8R 2012-04-27 17_33_48">
+      <DeploymentItem filename="C:\mydev\Incyte\BusinessLayer\bin\Debug\BusinessLayer.dll" />
+      <DeploymentItem filename="C:\mydev\Incyte\ResourceLayer\bin\Debug\ResourceLayer.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-04-27T17:33:48.2837317-07:00" queuing="2012-04-27T17:33:48.3007317-07:00" start="2012-04-27T17:33:48.3577317-07:00" finish="2012-04-27T17:33:48.6647317-07:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="UserInfoCreateDB" storage="c:\mydev\incyte\test\bin\debug\test.dll" id="f9ab5fc8-03a3-f296-790c-13d47ef8153f">
+      <Execution id="343ef0cc-ef80-435d-824f-947be1187ab7" />
+      <TestMethod codeBase="C:/mydev/Incyte/Test/bin/Debug/Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Test.UserServiceTestDB, Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="UserInfoCreateDB" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="f9ab5fc8-03a3-f296-790c-13d47ef8153f" executionId="343ef0cc-ef80-435d-824f-947be1187ab7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="343ef0cc-ef80-435d-824f-947be1187ab7" testId="f9ab5fc8-03a3-f296-790c-13d47ef8153f" testName="UserInfoCreateDB" computerName="RAGHUGDDSK8R" duration="00:00:00.0331853" startTime="2012-04-27T17:33:48.3817317-07:00" endTime="2012-04-27T17:33:48.6347317-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="343ef0cc-ef80-435d-824f-947be1187ab7">
+    </UnitTestResult>
+  </Results>
+</TestRun>

@@ -1,0 +1,6 @@
+C:\mydev\mynglzall\mynglz\Incyte\scratch\bin\Release\scratch.dll.config
+C:\mydev\mynglzall\mynglz\Incyte\scratch\bin\Release\scratch.dll
+C:\mydev\mynglzall\mynglz\Incyte\scratch\bin\Release\scratch.pdb
+C:\mydev\mynglzall\mynglz\Incyte\scratch\obj\Release\ResolveAssemblyReference.cache
+C:\mydev\mynglzall\mynglz\Incyte\scratch\obj\Release\scratch.dll
+C:\mydev\mynglzall\mynglz\Incyte\scratch\obj\Release\scratch.pdb

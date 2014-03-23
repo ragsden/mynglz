@@ -1,0 +1,10 @@
+C:\mydev\mynglz\Incyte\Common\bin\Debug\Common.dll
+C:\mydev\mynglz\Incyte\Common\bin\Debug\Common.pdb
+C:\mydev\mynglz\Incyte\Common\obj\Debug\ResolveAssemblyReference.cache
+C:\mydev\mynglz\Incyte\Common\obj\Debug\Common.dll
+C:\mydev\mynglz\Incyte\Common\obj\Debug\Common.pdb
+C:\mydev\mynglzall\mynglz\Incyte\Common\bin\Debug\Common.dll
+C:\mydev\mynglzall\mynglz\Incyte\Common\bin\Debug\Common.pdb
+C:\mydev\mynglzall\mynglz\Incyte\Common\obj\Debug\ResolveAssemblyReference.cache
+C:\mydev\mynglzall\mynglz\Incyte\Common\obj\Debug\Common.dll
+C:\mydev\mynglzall\mynglz\Incyte\Common\obj\Debug\Common.pdb

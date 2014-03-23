@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="4313b4e2-1677-46d0-82c5-076d8045dbfa" name="raghug@RAGHUGDDSK8R 2012-06-12 21:05:08" runUser="REDMOND\raghug" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="0a033359-9003-4ffc-8645-7fa61a9369c1">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="raghug_RAGHUGDDSK8R 2012-06-12 21_05_08">
+      <DeploymentItem filename="C:\mydev\mynglzall\mynglz\Incyte\BusinessLayer\bin\Debug\BusinessLayer.dll" />
+      <DeploymentItem filename="C:\mydev\mynglzall\mynglz\Incyte\ResourceLayer\bin\Debug\ResourceLayer.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-06-12T21:05:08.4179068-07:00" queuing="2012-06-12T21:05:10.6129068-07:00" start="2012-06-12T21:05:10.8889068-07:00" finish="2012-06-12T21:05:50.8279068-07:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="1" executed="1" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="RAGHUGDDSK8R" outcome="Error" timestamp="2012-06-12T21:05:50.8259068-07:00">
+        <Text>Test host process exited unexpectedly.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="UserChatGetDB" storage="c:\mydev\mynglzall\mynglz\incyte\test\bin\debug\test.dll" id="4b774a1c-c5c7-8aad-4d0a-cb95d16bb38b">
+      <Execution id="b8039e0e-ccbc-44c0-b8bf-81837921dacc" />
+      <TestMethod codeBase="C:/mydev/mynglzall/mynglz/Incyte/Test/bin/Debug/Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Test.UserServiceTestDB, Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="UserChatGetDB" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="4b774a1c-c5c7-8aad-4d0a-cb95d16bb38b" executionId="b8039e0e-ccbc-44c0-b8bf-81837921dacc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="b8039e0e-ccbc-44c0-b8bf-81837921dacc" testId="4b774a1c-c5c7-8aad-4d0a-cb95d16bb38b" testName="UserChatGetDB" computerName="RAGHUGDDSK8R" duration="00:00:39.7130000" startTime="2012-06-12T21:05:11.1149068-07:00" endTime="2012-06-12T21:05:50.8279068-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b8039e0e-ccbc-44c0-b8bf-81837921dacc">
+    </UnitTestResult>
+  </Results>
+</TestRun>

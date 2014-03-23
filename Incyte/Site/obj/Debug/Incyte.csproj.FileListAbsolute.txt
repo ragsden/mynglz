@@ -1,0 +1,5 @@
+C:\mydev\Incyte\Incyte\bin\Incyte.dll
+C:\mydev\Incyte\Incyte\bin\Incyte.pdb
+C:\mydev\Incyte\Incyte\obj\Debug\ResolveAssemblyReference.cache
+C:\mydev\Incyte\Incyte\obj\Debug\Incyte.dll
+C:\mydev\Incyte\Incyte\obj\Debug\Incyte.pdb

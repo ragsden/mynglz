@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="d3057df7-a639-4b1f-997c-37da849e2e2f" name="raghug@RAGHUGDDSK8R 2012-04-28 19:56:35" runUser="REDMOND\raghug" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="0a033359-9003-4ffc-8645-7fa61a9369c1">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="raghug_RAGHUGDDSK8R 2012-04-28 19_56_35">
+      <DeploymentItem filename="C:\mydev\Incyte\BusinessLayer\bin\Debug\BusinessLayer.dll" />
+      <DeploymentItem filename="C:\mydev\Incyte\ResourceLayer\bin\Debug\ResourceLayer.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-04-28T19:56:35.7822189-07:00" queuing="2012-04-28T19:56:35.8492256-07:00" start="2012-04-28T19:56:35.9452352-07:00" finish="2012-04-28T19:56:38.3944801-07:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="17" executed="17" passed="16" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="RevertInterestFail" storage="c:\mydev\incyte\test\bin\debug\test.dll" id="18056dad-9179-f403-55c3-5e1268fa1b27">
+      <Execution id="67272dc7-bbca-4ffc-a7b5-0a2f352872d3" />
+      <TestMethod codeBase="C:/mydev/Incyte/Test/bin/Debug/Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Test.UserServiceTest, Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="RevertInterestFail" />
+    </UnitTest>
+    <UnitTest name="UserInfoCreateDB" storage="c:\mydev\incyte\test\bin\debug\test.dll" id="f9ab5fc8-03a3-f296-790c-13d47ef8153f">
+      <Execution id="37f40f02-93d5-4480-b445-10080f7a2bb4" />
+      <TestMethod codeBase="C:/mydev/Incyte/Test/bin/Debug/Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Test.UserServiceTestDB, Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="UserInfoCreateDB" />
+    </UnitTest>
+    <UnitTest name="Hangup" storage="c:\mydev\incyte\test\bin\debug\test.dll" id="bb01bdb4-8334-c16a-f8c2-ae73eedf59ac">
+      <Execution id="1fa670c1-4f38-4736-a010-15fdddf382be" />
+      <TestMethod codeBase="C:/mydev/Incyte/Test/bin/Debug/Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Test.UserServiceTest, Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Hangup" />
+    </UnitTest>
+    <UnitTest name="BusinessGetWithDB" storage="c:\mydev\incyte\test\bin\debug\test.dll" id="a326f777-49b1-c27d-14ef-d9db5992cda0">
+      <Execution id="09de6274-d101-4873-873a-e0997d67e774" />
+      <TestMethod codeBase="C:/mydev/Incyte/Test/bin/Debug/Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Test.BusinessServiceTest, Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="BusinessGetWithDB" />
+    </UnitTest>
+    <UnitTest name="UserInfoFemaleCreateDB" storage="c:\mydev\incyte\test\bin\debug\test.dll" id="ffa14a88-2b0f-087b-2a81-cf125abdf1e1">
+      <Execution id="c2793759-a8a7-44b9-8f1c-4168b9cde961" />
+      <TestMethod codeBase="C:/mydev/Incyte/Test/bin/Debug/Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Test.UserServiceTestDB, Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="UserInfoFemaleCreateDB" />
+    </UnitTest>
+    <UnitTest name="UserLoginCreateDB" storage="c:\mydev\incyte\test\bin\debug\test.dll" id="12fac4e0-69ff-0457-3c20-7fc9b8977a24">
+      <Execution id="da101393-a21e-4330-8613-7749a689005f" />
+      <TestMethod codeBase="C:/mydev/Incyte/Test/bin/Debug/Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Test.UserServiceTestDB, Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="UserLoginCreateDB" />
+    </UnitTest>
+    <UnitTest name="VisibleProfilesByBusinessGet" storage="c:\mydev\incyte\test\bin\debug\test.dll" id="94df77a2-9782-7d32-6127-43a97a76246e">
+      <Execution id="fd859fa5-1b1b-4ab0-922d-8d178e398078" />
+      <TestMethod codeBase="C:/mydev/Incyte/Test/bin/Debug/Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Test.UserServiceTest, Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="VisibleProfilesByBusinessGet" />
+    </UnitTest>
+    <UnitTest name="GetVisibleProfilesDB" storage="c:\mydev\incyte\test\bin\debug\test.dll" id="501fc62f-cfb2-979c-272b-06db7780a4be">
+      <Execution id="f304d6e4-2c77-4644-b954-906ea39c9595" />
+      <TestMethod codeBase="C:/mydev/Incyte/Test/bin/Debug/Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Test.UserServiceTestDB, Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetVisibleProfilesDB" />
+    </UnitTest>
+    <UnitTest name="CheckoutCreateDB" storage="c:\mydev\incyte\test\bin\debug\test.dll" id="11ef5593-333e-be35-d461-00effd8ef353">
+      <Execution id="377a4478-362f-4269-931e-7a3c854f9250" />
+      <TestMethod codeBase="C:/mydev/Incyte/Test/bin/Debug/Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Test.UserServiceTestDB, Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CheckoutCreateDB" />
+    </UnitTest>
+    <UnitTest name="BusinessGetWithMock" storage="c:\mydev\incyte\test\bin\debug\test.dll" id="27efbd9f-8ccb-47bc-3631-9e1f574da0ed">
+      <Execution id="85454bd3-71b0-4055-9bca-5ec0c6123b7f" />
+      <TestMethod codeBase="C:/mydev/Incyte/Test/bin/Debug/Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Test.BusinessServiceTest, Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="BusinessGetWithMock" />
+    </UnitTest>
+    <UnitTest name="HangupFail" storage="c:\mydev\incyte\test\bin\debug\test.dll" id="e70d4088-3756-d06d-0435-266d8121c377">
+      <Execution id="7bd7df71-38e4-4295-b215-ba4a98f7474c" />
+      <TestMethod codeBase="C:/mydev/Incyte/Test/bin/Debug/Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Test.UserServiceTest, Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="HangupFail" />
+    </UnitTest>
+    <UnitTest name="RevertInterest" storage="c:\mydev\incyte\test\bin\debug\test.dll" id="8e11be20-dcc8-b441-0e20-33077a5da162">
+      <Execution id="b4281357-09c5-4990-a689-249e239e2362" />
+      <TestMethod codeBase="C:/mydev/Incyte/Test/bin/Debug/Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Test.UserServiceTest, Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="RevertInterest" />
+    </UnitTest>
+    <UnitTest name="CheckoutCreate" storage="c:\mydev\incyte\test\bin\debug\test.dll" id="f26afacb-9289-ac6c-38a7-7645a59c772b">
+      <Execution id="43ff1531-d617-4ae3-8ec8-0d5d9f6ae2e1" />
+      <TestMethod codeBase="C:/mydev/Incyte/Test/bin/Debug/Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Test.UserServiceTest, Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CheckoutCreate" />
+    </UnitTest>
+    <UnitTest name="CheckinCreate" storage="c:\mydev\incyte\test\bin\debug\test.dll" id="79f1ffd3-6454-fadb-42ed-47e3b37f87ec">
+      <Execution id="8c26ce0c-d7e4-400c-a3f7-82e45bd3946d" />
+      <TestMethod codeBase="C:/mydev/Incyte/Test/bin/Debug/Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Test.UserServiceTest, Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CheckinCreate" />
+    </UnitTest>
+    <UnitTest name="ShowInterestFail" storage="c:\mydev\incyte\test\bin\debug\test.dll" id="0245c92a-89ea-c8dd-19f2-548a9ed0c8f6">
+      <Execution id="ab16d788-486c-4850-9afb-20134ecca593" />
+      <TestMethod codeBase="C:/mydev/Incyte/Test/bin/Debug/Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Test.UserServiceTest, Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ShowInterestFail" />
+    </UnitTest>
+    <UnitTest name="ShowInterest" storage="c:\mydev\incyte\test\bin\debug\test.dll" id="3eb1e12c-9c03-8f26-5c42-7f1f24c9bbfc">
+      <Execution id="ed0f817b-82fa-4507-85ba-7d661beea4c2" />
+      <TestMethod codeBase="C:/mydev/Incyte/Test/bin/Debug/Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Test.UserServiceTest, Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ShowInterest" />
+    </UnitTest>
+    <UnitTest name="CheckinCreateDB" storage="c:\mydev\incyte\test\bin\debug\test.dll" id="3f43c904-aa29-9c6c-e659-5a7c08592202">
+      <Execution id="c8f143d6-c7fd-4ad5-b016-3b63d700b66a" />
+      <TestMethod codeBase="C:/mydev/Incyte/Test/bin/Debug/Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Test.UserServiceTestDB, Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CheckinCreateDB" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="0245c92a-89ea-c8dd-19f2-548a9ed0c8f6" executionId="ab16d788-486c-4850-9afb-20134ecca593" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="11ef5593-333e-be35-d461-00effd8ef353" executionId="377a4478-362f-4269-931e-7a3c854f9250" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="12fac4e0-69ff-0457-3c20-7fc9b8977a24" executionId="da101393-a21e-4330-8613-7749a689005f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="18056dad-9179-f403-55c3-5e1268fa1b27" executionId="67272dc7-bbca-4ffc-a7b5-0a2f352872d3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="27efbd9f-8ccb-47bc-3631-9e1f574da0ed" executionId="85454bd3-71b0-4055-9bca-5ec0c6123b7f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3eb1e12c-9c03-8f26-5c42-7f1f24c9bbfc" executionId="ed0f817b-82fa-4507-85ba-7d661beea4c2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3f43c904-aa29-9c6c-e659-5a7c08592202" executionId="c8f143d6-c7fd-4ad5-b016-3b63d700b66a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="501fc62f-cfb2-979c-272b-06db7780a4be" executionId="f304d6e4-2c77-4644-b954-906ea39c9595" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="79f1ffd3-6454-fadb-42ed-47e3b37f87ec" executionId="8c26ce0c-d7e4-400c-a3f7-82e45bd3946d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8e11be20-dcc8-b441-0e20-33077a5da162" executionId="b4281357-09c5-4990-a689-249e239e2362" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="94df77a2-9782-7d32-6127-43a97a76246e" executionId="fd859fa5-1b1b-4ab0-922d-8d178e398078" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a326f777-49b1-c27d-14ef-d9db5992cda0" executionId="09de6274-d101-4873-873a-e0997d67e774" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bb01bdb4-8334-c16a-f8c2-ae73eedf59ac" executionId="1fa670c1-4f38-4736-a010-15fdddf382be" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e70d4088-3756-d06d-0435-266d8121c377" executionId="7bd7df71-38e4-4295-b215-ba4a98f7474c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f26afacb-9289-ac6c-38a7-7645a59c772b" executionId="43ff1531-d617-4ae3-8ec8-0d5d9f6ae2e1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f9ab5fc8-03a3-f296-790c-13d47ef8153f" executionId="37f40f02-93d5-4480-b445-10080f7a2bb4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ffa14a88-2b0f-087b-2a81-cf125abdf1e1" executionId="c2793759-a8a7-44b9-8f1c-4168b9cde961" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="ab16d788-486c-4850-9afb-20134ecca593" testId="0245c92a-89ea-c8dd-19f2-548a9ed0c8f6" testName="ShowInterestFail" computerName="RAGHUGDDSK8R" duration="00:00:00.0147937" startTime="2012-04-28T19:56:35.9582365-07:00" endTime="2012-04-28T19:56:36.2032610-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ab16d788-486c-4850-9afb-20134ecca593">
+    </UnitTestResult>
+    <UnitTestResult executionId="377a4478-362f-4269-931e-7a3c854f9250" testId="11ef5593-333e-be35-d461-00effd8ef353" testName="CheckoutCreateDB" computerName="RAGHUGDDSK8R" duration="00:00:00.0349896" startTime="2012-04-28T19:56:36.2172624-07:00" endTime="2012-04-28T19:56:36.2572664-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="377a4478-362f-4269-931e-7a3c854f9250">
+    </UnitTestResult>
+    <UnitTestResult executionId="da101393-a21e-4330-8613-7749a689005f" testId="12fac4e0-69ff-0457-3c20-7fc9b8977a24" testName="UserLoginCreateDB" computerName="RAGHUGDDSK8R" duration="00:00:00.0008126" startTime="2012-04-28T19:56:36.2732680-07:00" endTime="2012-04-28T19:56:36.2892696-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="da101393-a21e-4330-8613-7749a689005f">
+    </UnitTestResult>
+    <UnitTestResult executionId="67272dc7-bbca-4ffc-a7b5-0a2f352872d3" testId="18056dad-9179-f403-55c3-5e1268fa1b27" testName="RevertInterestFail" computerName="RAGHUGDDSK8R" duration="00:00:00.0007218" startTime="2012-04-28T19:56:36.3092716-07:00" endTime="2012-04-28T19:56:36.3152722-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="67272dc7-bbca-4ffc-a7b5-0a2f352872d3">
+    </UnitTestResult>
+    <UnitTestResult executionId="85454bd3-71b0-4055-9bca-5ec0c6123b7f" testId="27efbd9f-8ccb-47bc-3631-9e1f574da0ed" testName="BusinessGetWithMock" computerName="RAGHUGDDSK8R" duration="00:00:00.3262937" startTime="2012-04-28T19:56:36.3272734-07:00" endTime="2012-04-28T19:56:36.6603067-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="85454bd3-71b0-4055-9bca-5ec0c6123b7f">
+    </UnitTestResult>
+    <UnitTestResult executionId="ed0f817b-82fa-4507-85ba-7d661beea4c2" testId="3eb1e12c-9c03-8f26-5c42-7f1f24c9bbfc" testName="ShowInterest" computerName="RAGHUGDDSK8R" duration="00:00:00.0005100" startTime="2012-04-28T19:56:36.6653072-07:00" endTime="2012-04-28T19:56:36.6733080-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ed0f817b-82fa-4507-85ba-7d661beea4c2">
+    </UnitTestResult>
+    <UnitTestResult executionId="c8f143d6-c7fd-4ad5-b016-3b63d700b66a" testId="3f43c904-aa29-9c6c-e659-5a7c08592202" testName="CheckinCreateDB" computerName="RAGHUGDDSK8R" duration="00:00:00.0037395" startTime="2012-04-28T19:56:36.6783085-07:00" endTime="2012-04-28T19:56:36.6883095-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c8f143d6-c7fd-4ad5-b016-3b63d700b66a">
+    </UnitTestResult>
+    <UnitTestResult executionId="f304d6e4-2c77-4644-b954-906ea39c9595" testId="501fc62f-cfb2-979c-272b-06db7780a4be" testName="GetVisibleProfilesDB" computerName="RAGHUGDDSK8R" duration="00:00:00.0103843" startTime="2012-04-28T19:56:36.6923099-07:00" endTime="2012-04-28T19:56:36.7113118-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f304d6e4-2c77-4644-b954-906ea39c9595">
+    </UnitTestResult>
+    <UnitTestResult executionId="8c26ce0c-d7e4-400c-a3f7-82e45bd3946d" testId="79f1ffd3-6454-fadb-42ed-47e3b37f87ec" testName="CheckinCreate" computerName="RAGHUGDDSK8R" duration="00:00:00.0003125" startTime="2012-04-28T19:56:36.7143121-07:00" endTime="2012-04-28T19:56:36.7213128-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8c26ce0c-d7e4-400c-a3f7-82e45bd3946d">
+    </UnitTestResult>
+    <UnitTestResult executionId="b4281357-09c5-4990-a689-249e239e2362" testId="8e11be20-dcc8-b441-0e20-33077a5da162" testName="RevertInterest" computerName="RAGHUGDDSK8R" duration="00:00:00.0002633" startTime="2012-04-28T19:56:36.7253132-07:00" endTime="2012-04-28T19:56:36.7313138-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b4281357-09c5-4990-a689-249e239e2362">
+    </UnitTestResult>
+    <UnitTestResult executionId="fd859fa5-1b1b-4ab0-922d-8d178e398078" testId="94df77a2-9782-7d32-6127-43a97a76246e" testName="VisibleProfilesByBusinessGet" computerName="RAGHUGDDSK8R" duration="00:00:00.0444208" startTime="2012-04-28T19:56:36.7353142-07:00" endTime="2012-04-28T19:56:36.7883195-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fd859fa5-1b1b-4ab0-922d-8d178e398078">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method Test.UserServiceTest.VisibleProfilesByBusinessGet threw exception: 
+System.ArgumentException: Column 'Gender' does not belong to table .</Message>
+          <StackTrace>    at System.Data.DataRow.GetDataColumn(String columnName)
+   at System.Data.DataRow.get_Item(String columnName)
+   at System.Data.DataTableReader.get_Item(String name)
+   at Incyte.Services.UserService.UserInfoConverter(IDataReader dr, Object dataObject) in C:\mydev\Incyte\BusinessLayer\Impls\UserService.cs:line 122
+   at Test.mocks.MockUserResource.VisibleProfilesGet(String userID, Converter converter, Object dataObject) in C:\mydev\Incyte\Test\mocks\MockUserResource.cs:line 83
+   at Incyte.Services.UserService.VisibleProfilesGet(String userID) in C:\mydev\Incyte\BusinessLayer\Impls\UserService.cs:line 89
+   at Test.UserServiceTest.VisibleProfilesByBusinessGet() in C:\mydev\Incyte\Test\UserServiceTest.cs:line 22
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="09de6274-d101-4873-873a-e0997d67e774" testId="a326f777-49b1-c27d-14ef-d9db5992cda0" testName="BusinessGetWithDB" computerName="RAGHUGDDSK8R" duration="00:00:01.4703086" startTime="2012-04-28T19:56:36.8053212-07:00" endTime="2012-04-28T19:56:38.2814688-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="09de6274-d101-4873-873a-e0997d67e774">
+    </UnitTestResult>
+    <UnitTestResult executionId="1fa670c1-4f38-4736-a010-15fdddf382be" testId="bb01bdb4-8334-c16a-f8c2-ae73eedf59ac" testName="Hangup" computerName="RAGHUGDDSK8R" duration="00:00:00.0003268" startTime="2012-04-28T19:56:38.2914698-07:00" endTime="2012-04-28T19:56:38.2984705-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1fa670c1-4f38-4736-a010-15fdddf382be">
+    </UnitTestResult>
+    <UnitTestResult executionId="7bd7df71-38e4-4295-b215-ba4a98f7474c" testId="e70d4088-3756-d06d-0435-266d8121c377" testName="HangupFail" computerName="RAGHUGDDSK8R" duration="00:00:00.0002906" startTime="2012-04-28T19:56:38.3044711-07:00" endTime="2012-04-28T19:56:38.3104717-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7bd7df71-38e4-4295-b215-ba4a98f7474c">
+    </UnitTestResult>
+    <UnitTestResult executionId="43ff1531-d617-4ae3-8ec8-0d5d9f6ae2e1" testId="f26afacb-9289-ac6c-38a7-7645a59c772b" testName="CheckoutCreate" computerName="RAGHUGDDSK8R" duration="00:00:00.0003306" startTime="2012-04-28T19:56:38.3154722-07:00" endTime="2012-04-28T19:56:38.3224729-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="43ff1531-d617-4ae3-8ec8-0d5d9f6ae2e1">
+    </UnitTestResult>
+    <UnitTestResult executionId="37f40f02-93d5-4480-b445-10080f7a2bb4" testId="f9ab5fc8-03a3-f296-790c-13d47ef8153f" testName="UserInfoCreateDB" computerName="RAGHUGDDSK8R" duration="00:00:00.0059180" startTime="2012-04-28T19:56:38.3274734-07:00" endTime="2012-04-28T19:56:38.3394746-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="37f40f02-93d5-4480-b445-10080f7a2bb4">
+    </UnitTestResult>
+    <UnitTestResult executionId="c2793759-a8a7-44b9-8f1c-4168b9cde961" testId="ffa14a88-2b0f-087b-2a81-cf125abdf1e1" testName="UserInfoFemaleCreateDB" computerName="RAGHUGDDSK8R" duration="00:00:00.0025888" startTime="2012-04-28T19:56:38.3434750-07:00" endTime="2012-04-28T19:56:38.3514758-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c2793759-a8a7-44b9-8f1c-4168b9cde961">
+    </UnitTestResult>
+  </Results>
+</TestRun>

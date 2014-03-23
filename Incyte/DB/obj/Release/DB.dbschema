@@ -1,0 +1,4657 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DataSchemaModel FileFormatVersion="1.2" SchemaVersion="1.1" DspName="Microsoft.Data.Schema.Sql.Sql100DatabaseSchemaProvider" CollationLcid="1033" CollationCaseSensitive="False">
+	<Header>
+		<CustomData Category="ModelCapability">
+			<Metadata Name="ModelCapability" Value="Default" />
+		</CustomData>
+		<CustomData Category="ClrTypesDbSchema" Type="DbSchema">
+			<Metadata Name="ClrTypesDbSchema" Value="True" />
+		</CustomData>
+		<CustomData Category="AnsiNulls">
+			<Metadata Name="AnsiNulls" Value="True" />
+		</CustomData>
+		<CustomData Category="QuotedIdentifier">
+			<Metadata Name="QuotedIdentifier" Value="True" />
+		</CustomData>
+		<CustomData Category="CompatibilityMode">
+			<Metadata Name="CompatibilityMode" Value="100" />
+		</CustomData>
+		<CustomData Category="Permissions" Type="XmlPermissions">
+			<Metadata Name="FileName" Value="C:\MYDEV\MYNGLZALL\MYNGLZ\INCYTE\DB\PROPERTIES\DATABASE.SQLPERMISSIONS" />
+		</CustomData>
+	</Header>
+	<Model>
+		<Element Type="ISql100DatabaseOptions">
+			<Property Name="Collation" Value="SQL_Latin1_General_CP1_CI_AS" />
+			<Property Name="IsAnsiNullDefaultOn" Value="True" />
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Property Name="IsAnsiWarningsOn" Value="True" />
+			<Property Name="IsArithAbortOn" Value="True" />
+			<Property Name="IsConcatNullYieldsNullOn" Value="True" />
+			<Property Name="IsTornPageProtectionOn" Value="False" />
+			<Property Name="IsFullTextEnabled" Value="True" />
+			<Property Name="PageVerifyMode" Value="3" />
+			<Relationship Name="DefaultFilegroup">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[PRIMARY]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90DefaultConstraint">
+			<Property Name="DefaultExpressionScript">
+				<Value><![CDATA[(0)]]></Value>
+			</Property>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[UserCheckInHistory]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForColumn">
+				<Entry>
+					<References Name="[dbo].[UserCheckInHistory].[CheckinCount]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="5" />
+		</Element>
+		<Element Type="ISql90DefaultConstraint">
+			<Property Name="DefaultExpressionScript">
+				<Value><![CDATA[(0)]]></Value>
+			</Property>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[UserCheckIn]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForColumn">
+				<Entry>
+					<References Name="[dbo].[UserCheckIn].[CheckinCount]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="6" />
+		</Element>
+		<Element Type="ISql90DefaultConstraint">
+			<Property Name="DefaultExpressionScript">
+				<Value><![CDATA[(GETUTCDATE())]]></Value>
+			</Property>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[UserCheckIn]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForColumn">
+				<Entry>
+					<References Name="[dbo].[UserCheckIn].[UpdatedDtTm]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="7" />
+		</Element>
+		<Element Type="ISql90DefaultConstraint">
+			<Property Name="DefaultExpressionScript">
+				<Value><![CDATA[(0)]]></Value>
+			</Property>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[UserInfo]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForColumn">
+				<Entry>
+					<References Name="[dbo].[UserInfo].[OnlineStatusID]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="8" />
+		</Element>
+		<Element Type="ISql90DefaultConstraint">
+			<Property Name="DefaultExpressionScript">
+				<Value><![CDATA[(GETUTCDATE())]]></Value>
+			</Property>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[UserInfo]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForColumn">
+				<Entry>
+					<References Name="[dbo].[UserInfo].[UpdatedDtTm]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="9" />
+		</Element>
+		<Element Type="ISql90DefaultConstraint">
+			<Property Name="DefaultExpressionScript">
+				<Value><![CDATA[(GETUTCDATE())]]></Value>
+			</Property>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[UserInfo]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForColumn">
+				<Entry>
+					<References Name="[dbo].[UserInfo].[CreatedDtTm]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="10" />
+		</Element>
+		<Element Type="ISql90DefaultConstraint">
+			<Property Name="DefaultExpressionScript">
+				<Value><![CDATA[(GETUTCDATE())]]></Value>
+			</Property>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[UserLogin]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForColumn">
+				<Entry>
+					<References Name="[dbo].[UserLogin].[LastLoginDateTime]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="11" />
+		</Element>
+		<Element Type="ISql90DefaultConstraint">
+			<Property Name="DefaultExpressionScript">
+				<Value><![CDATA[(GETUTCDATE())]]></Value>
+			</Property>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[UserLogin]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForColumn">
+				<Entry>
+					<References Name="[dbo].[UserLogin].[CreatedDtTm]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="12" />
+		</Element>
+		<Element Type="ISql90DefaultConstraint">
+			<Property Name="DefaultExpressionScript">
+				<Value><![CDATA[(0)]]></Value>
+			</Property>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Business]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForColumn">
+				<Entry>
+					<References Name="[dbo].[Business].[GenderMCheckIns]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="13" />
+		</Element>
+		<Element Type="ISql90DefaultConstraint">
+			<Property Name="DefaultExpressionScript">
+				<Value><![CDATA[(0)]]></Value>
+			</Property>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Business]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForColumn">
+				<Entry>
+					<References Name="[dbo].[Business].[GenderFCheckIns]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="14" />
+		</Element>
+		<Element Type="ISql90DefaultConstraint">
+			<Property Name="DefaultExpressionScript">
+				<Value><![CDATA[(GETUTCDATE())]]></Value>
+			</Property>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Business]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForColumn">
+				<Entry>
+					<References Name="[dbo].[Business].[UpdatedDtTm]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="15" />
+		</Element>
+		<Element Type="ISql90DefaultConstraint">
+			<Property Name="DefaultExpressionScript">
+				<Value><![CDATA[(GETUTCDATE())]]></Value>
+			</Property>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[UserImageHistory]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForColumn">
+				<Entry>
+					<References Name="[dbo].[UserImageHistory].[CreatedDtTm]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="16" />
+		</Element>
+		<Element Type="ISql90DefaultConstraint">
+			<Property Name="DefaultExpressionScript">
+				<Value><![CDATA[(0)]]></Value>
+			</Property>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[UserChatHistory]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForColumn">
+				<Entry>
+					<References Name="[dbo].[UserChatHistory].[IsHigherMessage]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="17" />
+		</Element>
+		<Element Type="ISql90DefaultConstraint">
+			<Property Name="DefaultExpressionScript">
+				<Value><![CDATA[(GETUTCDATE())]]></Value>
+			</Property>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[UserChatHistory]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForColumn">
+				<Entry>
+					<References Name="[dbo].[UserChatHistory].[CreatedDtTm]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="18" />
+		</Element>
+		<Element Type="ISql90DefaultConstraint">
+			<Property Name="DefaultExpressionScript">
+				<Value><![CDATA[(0)]]></Value>
+			</Property>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[UserChat]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForColumn">
+				<Entry>
+					<References Name="[dbo].[UserChat].[IsHigherMessage]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="19" />
+		</Element>
+		<Element Type="ISql90DefaultConstraint">
+			<Property Name="DefaultExpressionScript">
+				<Value><![CDATA[(GETUTCDATE())]]></Value>
+			</Property>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[UserChat]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForColumn">
+				<Entry>
+					<References Name="[dbo].[UserChat].[CreatedDtTm]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="20" />
+		</Element>
+		<Element Type="ISql90DefaultConstraint">
+			<Property Name="DefaultExpressionScript">
+				<Value><![CDATA[(GETUTCDATE())]]></Value>
+			</Property>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[UserSelectionHistory]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForColumn">
+				<Entry>
+					<References Name="[dbo].[UserSelectionHistory].[UpdatedDtTm]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="21" />
+		</Element>
+		<Element Type="ISql90DefaultConstraint">
+			<Property Name="DefaultExpressionScript">
+				<Value><![CDATA[(GETUTCDATE())]]></Value>
+			</Property>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[UserSelection]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForColumn">
+				<Entry>
+					<References Name="[dbo].[UserSelection].[UpdatedDtTm]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="22" />
+		</Element>
+		<Element Type="ISql100Procedure" Name="[dbo].[AutoCheckout]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+BEGIN
+	
+	DECLARE @users TABLE (userid INT, isprocessed bit)
+	DECLARE @count INT
+			,@userid INT
+	
+	INSERT INTO @users
+	SELECT
+		UserID
+		,0
+	FROM UserCheckIn (NOLOCK)
+	WHERE ISNULL(BusinessId,0) <> 0 
+	AND DATEDIFF(HOUR,UpdatedDtTm,GETUTCDATE()) > 6 
+	
+	SELECT @count = COUNT(1) FROM @users WHERE isprocessed = 0
+	WHILE @count > 0
+	BEGIN
+		
+		SELECT TOP 1 @userid = userid from @users WHERE isprocessed = 0
+		
+		EXEC CheckOut @UserId = @userid , @BusinessID = 0
+
+		UPDATE @users SET isprocessed = 1 WHERE userid = @userid
+		
+		SELECT @count = 0
+		SELECT @count = COUNT(1) FROM @users WHERE isprocessed = 0
+		
+	END
+
+END]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[int]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[int]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserCheckIn]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserCheckIn].[UserID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserCheckIn].[BusinessId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserCheckIn].[UpdatedDtTm]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[AutoCheckout].[@users].[isprocessed]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[AutoCheckout].[@users].[userid]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[CheckOut]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[CheckOut].[@UserId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[CheckOut].[@BusinessID]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DynamicObjects">
+				<Entry>
+					<Element Type="ISqlDynamicColumnSource" Name="[dbo].[AutoCheckout].[@users]">
+						<Relationship Name="Columns">
+							<Entry>
+								<Element Type="ISql100SimpleColumn" Name="[dbo].[AutoCheckout].[@users].[userid]">
+									<Relationship Name="TypeSpecifier">
+										<Entry>
+											<Element Type="ISql90TypeSpecifier">
+												<Relationship Name="Type">
+													<Entry>
+														<References ExternalSource="BuiltIns" Name="[int]" />
+													</Entry>
+												</Relationship>
+											</Element>
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="ISql100SimpleColumn" Name="[dbo].[AutoCheckout].[@users].[isprocessed]">
+									<Relationship Name="TypeSpecifier">
+										<Entry>
+											<Element Type="ISql90TypeSpecifier">
+												<Relationship Name="Type">
+													<Entry>
+														<References ExternalSource="BuiltIns" Name="[bit]" />
+													</Entry>
+												</Relationship>
+											</Element>
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="682" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE AutoCheckout&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="ISql100Table" Name="[dbo].[Business]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Business].[BusinessId]">
+						<Property Name="IsNullable" Value="False" />
+						<Property Name="IsIdentity" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Business].[ExternalId]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="30" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Business].[GenderMCheckIns]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+						<AttachedAnnotation Disambiguator="13" />
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Business].[GenderFCheckIns]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+						<AttachedAnnotation Disambiguator="14" />
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Business].[SourceId]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Business].[ExternalIdCheckSum]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varbinary]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Business].[LastDateCheckin]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[datetime]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Business].[UpdatedDtTm]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[datetime]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+						<AttachedAnnotation Disambiguator="15" />
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Business].[UpdatedBy]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="80" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="23" />
+		</Element>
+		<Element Type="ISql100Index" Name="[dbo].[Business].[UNCIExternalIdCheckSum]">
+			<Property Name="IsUnique" Value="True" />
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[Business].[ExternalIdCheckSum]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="IndexedObject">
+				<Entry>
+					<References Name="[dbo].[Business]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100TableType" Name="[dbo].[BusinessLight]">
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="ISql100TableTypeSimpleColumn" Name="[dbo].[BusinessLight].[ExternalId]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="IsMax" Value="True" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100TableTypeSimpleColumn" Name="[dbo].[BusinessLight].[SourceId]">
+						<Property Name="IsNullable" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100Procedure" Name="[dbo].[CheckIn]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+BEGIN
+	
+	DECLARE @Gender SMALLINT
+	DECLARE @Success BIT
+	SELECT @Success = 0
+	
+	SELECT 	@Gender = Gender FROM UserInfo (NOLOCK) WHERE UserID = @UserId
+	
+	EXEC CheckOut @UserId = @UserId, @BusinessId = @BusinessId , @Gender = @Gender, @Success = @Success OUTPUT
+	
+	UPDATE UserCheckIn SET 
+		BusinessId = @BusinessId, 
+		CheckinCount = CASE WHEN BusinessId = @BusinessId THEN CheckinCount ELSE CheckinCount + 1 END,
+		StartTime = GETUTCDATE(), 
+		UpdatedDtTm = GETUTCDATE() 
+	WHERE  UserID = @UserID
+	
+	IF @Success = 1
+	BEGIN
+		IF @Gender = 1
+			UPDATE Business SET 
+				GenderMCheckIns = GenderMCheckIns + 1, 
+				UpdatedDtTm = GETUTCDATE() 
+			WHERE  BusinessId = @BusinessId
+		ELSE
+			UPDATE Business SET 
+				GenderFCheckIns = GenderFCheckIns + 1, 
+				UpdatedDtTm = GETUTCDATE() 
+			WHERE  BusinessId = @BusinessId
+	END
+END]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[smallint]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[bit]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserInfo]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserInfo].[Gender]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserInfo].[UserID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[CheckIn].[@UserId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[CheckOut]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[CheckOut].[@UserId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[CheckOut].[@BusinessID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[CheckIn].[@BusinessId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[CheckOut].[@Gender]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[CheckOut].[@Success]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserCheckIn]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserCheckIn].[BusinessId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserCheckIn].[CheckinCount]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserCheckIn].[StartTime]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserCheckIn].[UpdatedDtTm]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserCheckIn].[UserID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[CheckIn].[@UserId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Business]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Business].[GenderMCheckIns]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Business].[UpdatedDtTm]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Business].[BusinessId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Business].[GenderFCheckIns]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[CheckIn].[@UserId]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[CheckIn].[@BusinessId]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="922" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE CheckIn&#xD;&#xA;&#x9;@UserId&#x9;&#x9;&#x9;int,&#xD;&#xA;&#x9;@BusinessId&#x9;&#x9;int&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="ISql100Procedure" Name="[dbo].[CheckOut]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+BEGIN
+	DECLARE @CurrentBusinessID INT
+	SELECT @CurrentBusinessID = 0
+	
+	SELECT
+		@CurrentBusinessID = BusinessId
+	FROM UserCheckIn  (NOLOCK) WHERE UserID = @UserID
+	
+	INSERT INTO UserCheckInHistory
+	(
+		UserID
+		,StartTime
+		,EndTime
+		,BusinessId
+		,CheckinCount
+		,UpdatedDtTm
+	)
+	SELECT
+		UserID
+		,StartTime
+		,GETUTCDATE()
+		,BusinessId
+		,CheckinCount
+		,UpdatedDtTm
+	FROM UserCheckIn (NOLOCK) WHERE UserID = @UserID
+	AND ISNULL(BusinessId,0) <> 0 
+	AND (
+			ISNULL(BusinessId,0) <> @BusinessID
+		OR
+			(BusinessId = @BusinessID AND DATEDIFF(HOUR,UpdatedDtTm,GETUTCDATE()) > 6 )
+		)
+	
+	DECLARE @CheckinId INT = @@IDENTITY
+
+	IF(ISNULL(@CheckinId,0) > 0 )
+	BEGIN
+		INSERT INTO UserSelectionHistory
+		(
+			UserCheckInId
+			,FromUserID
+			,ToUserId
+			,StatusId
+			,UpdatedDtTm
+		)
+		SELECT
+			@CheckinId,
+			FromUserID,
+			ToUserId,
+			StatusId,
+			UpdatedDtTm
+		FROM UserSelection (NOLOCK)
+		WHERE
+			FromUserID = @UserID
+	
+		SELECT @Success = 1
+		
+		UPDATE UserCheckIn SET BusinessId = null, StartTime = null WHERE  UserID = @UserID
+			IF @Gender = 0
+		SELECT 	@Gender = Gender FROM UserInfo (NOLOCK) WHERE UserID = @UserId
+			
+		IF @Gender = 1
+			UPDATE Business SET 
+				GenderMCheckIns = GenderMCheckIns - 1, 
+				UpdatedDtTm = GETUTCDATE() 
+			WHERE  BusinessId = @CurrentBusinessID
+			AND GenderMCheckIns > 0
+		ELSE
+			UPDATE Business SET 
+				GenderFCheckIns = GenderFCheckIns - 1, 
+				UpdatedDtTm = GETUTCDATE() 
+			WHERE  BusinessId = @CurrentBusinessID
+					AND GenderFCheckIns > 0
+	END
+	ELSE
+	BEGIN
+		IF ISNULL(@CurrentBusinessID,0) = 0
+			SELECT @Success = 1
+	END
+		
+END]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[int]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[int]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserCheckIn]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserCheckIn].[BusinessId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserCheckIn].[UserID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[CheckOut].[@UserId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserCheckInHistory]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserCheckInHistory].[UserID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserCheckInHistory].[StartTime]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserCheckInHistory].[EndTime]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserCheckInHistory].[BusinessId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserCheckInHistory].[CheckinCount]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserCheckInHistory].[UpdatedDtTm]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserCheckIn].[StartTime]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserCheckIn].[CheckinCount]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserCheckIn].[UpdatedDtTm]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[CheckOut].[@BusinessID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserSelectionHistory]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserSelectionHistory].[UserCheckInId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserSelectionHistory].[FromUserID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserSelectionHistory].[ToUserId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserSelectionHistory].[StatusId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserSelectionHistory].[UpdatedDtTm]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserSelection]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserSelection].[FromUserID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserSelection].[ToUserId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserSelection].[StatusId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserSelection].[UpdatedDtTm]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[CheckOut].[@Success]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[CheckOut].[@Gender]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserInfo]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserInfo].[Gender]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserInfo].[UserID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[CheckOut].[@UserId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Business]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Business].[GenderMCheckIns]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Business].[UpdatedDtTm]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Business].[BusinessId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Business].[GenderFCheckIns]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[CheckOut].[@UserId]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[CheckOut].[@BusinessID]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[CheckOut].[@Gender]">
+						<Property Name="DefaultExpressionScript">
+							<Value><![CDATA[0]]></Value>
+						</Property>
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[smallint]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[CheckOut].[@Success]">
+						<Property Name="IsOutput" Value="True" />
+						<Property Name="DefaultExpressionScript">
+							<Value><![CDATA[0]]></Value>
+						</Property>
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[bit]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="1788" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE CheckOut&#xD;&#xA;&#x9;@UserId&#x9;&#x9;&#x9;INT,&#xD;&#xA;&#x9;@BusinessID&#x9;&#x9;INT,&#xD;&#xA;&#x9;@Gender&#x9;&#x9;&#x9;SMALLINT = 0,&#xD;&#xA;&#x9;@Success&#x9;&#x9;BIT = 0 OUTPUT &#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="ISql100Procedure" Name="[dbo].[CreateBusinessLight]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+BEGIN
+
+	WHILE 1=1
+	BEGIN
+		BEGIN TRY
+		
+		INSERT INTO business (externalid,sourceid,externalidCheckSum )
+		SELECT a.externalid,a.sourceid,hashbytes('md5',a.externalid) from @BusinessLight a
+		LEFT JOIN business  (NOLOCK) b
+		ON b.externalidchecksum = hashbytes('md5',a.externalid)
+		WHERE b.externalid IS NULL
+		
+		SELECT b.* from @BusinessLight a
+		JOIN business  (NOLOCK) b
+		ON a.externalid = b.externalid
+		
+		BREAK
+		
+		END TRY
+		BEGIN CATCH
+			
+		END CATCH
+	END
+END]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[Business]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Business].[ExternalId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Business].[SourceId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Business].[ExternalIdCheckSum]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[CreateBusinessLight].[@BusinessLight]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Business].[ExternalIdCheckSum]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[CreateBusinessLight].[@BusinessLight].[ExternalId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[CreateBusinessLight].[@BusinessLight].[SourceId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Business].[ExternalId]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DynamicObjects">
+				<Entry>
+					<Element Type="ISqlDynamicColumnSource" Name="[dbo].[CreateBusinessLight].[@BusinessLight]" Disambiguator="2">
+						<Relationship Name="Columns">
+							<Entry>
+								<Element Type="ISql100SimpleColumn" Name="[dbo].[CreateBusinessLight].[@BusinessLight].[ExternalId]">
+									<Property Name="IsNullable" Value="False" />
+									<Relationship Name="TypeSpecifier">
+										<Entry>
+											<Element Type="ISql90TypeSpecifier">
+												<Property Name="IsMax" Value="True" />
+												<Relationship Name="Type">
+													<Entry>
+														<References ExternalSource="BuiltIns" Name="[varchar]" />
+													</Entry>
+												</Relationship>
+											</Element>
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="ISql100SimpleColumn" Name="[dbo].[CreateBusinessLight].[@BusinessLight].[SourceId]">
+									<Relationship Name="TypeSpecifier">
+										<Entry>
+											<Element Type="ISql90TypeSpecifier">
+												<Relationship Name="Type">
+													<Entry>
+														<References ExternalSource="BuiltIns" Name="[int]" />
+													</Entry>
+												</Relationship>
+											</Element>
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[CreateBusinessLight].[@BusinessLight]">
+						<Property Name="IsReadOnly" Value="True" />
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References Name="[dbo].[BusinessLight]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="579" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE CreateBusinessLight&#xD;&#xA;&#x9;@BusinessLight AS BusinessLight READONLY&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="ISql100Procedure" Name="[dbo].[CreateBusinessLightTEST]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+BEGIN
+	WHILE 1=1
+	BEGIN
+		BEGIN TRY
+		DECLARE @business TABLE (BusinessId INT)
+
+		INSERT INTO business (externalid,sourceid,externalidCheckSum )
+		SELECT a.externalid,a.sourceid,hashbytes('md5',a.externalid) from @BusinessLight a
+		LEFT JOIN business  (NOLOCK) b
+		ON b.externalidchecksum = hashbytes('md5',a.externalid)
+		WHERE b.externalid IS NULL
+		
+		INSERT INTO @business
+		SELECT b.BusinessId from @BusinessLight a
+		JOIN business  (NOLOCK) b
+		ON a.externalid = b.externalid
+		
+		UPDATE UserCheckIn SET BusinessId = null
+
+		WHILE (SELECT COUNT(1) FROM @business WHERE BusinessId NOT IN (SELECT ISNULL(BusinessId,0) From UserCheckIn (NOLOCK))) > 0
+		BEGIN
+			UPDATE U
+				SET U.BusinessId = (SELECT top 1 BusinessId from @business WHERE BusinessId not in (select ISNULL(BusinessId,0) from UserCheckIn))
+				,StartTime = GETUTCDATE()
+			FROM UserCheckIn U (NOLOCK)
+			JOIN (Select top 10 userid from UserCheckIn (NOLOCK) WHERE BusinessId IS NULL) b
+			ON b.UserID = u.UserID;
+		END
+
+
+		
+		SELECT b.* from @BusinessLight a
+		JOIN business  (NOLOCK) b
+		ON a.externalid = b.externalid
+		
+		BREAK
+		
+		END TRY
+		BEGIN CATCH
+			
+		END CATCH
+	END
+END]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[Business]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Business].[ExternalId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Business].[SourceId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Business].[ExternalIdCheckSum]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[CreateBusinessLightTEST].[@BusinessLight]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Business].[ExternalIdCheckSum]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[CreateBusinessLightTEST].[@BusinessLight].[ExternalId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[CreateBusinessLightTEST].[@BusinessLight].[SourceId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Business].[ExternalId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Business].[BusinessId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserCheckIn]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserCheckIn].[BusinessId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[CreateBusinessLightTEST].[@business].[BusinessId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserCheckIn]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserCheckIn].[BusinessId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserCheckIn]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserCheckIn].[UserID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserCheckIn].[BusinessId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserCheckIn].[UserID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserCheckIn].[UserID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserCheckIn].[BusinessId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[CreateBusinessLightTEST].[@business].[BusinessId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserCheckIn].[StartTime]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DynamicObjects">
+				<Entry>
+					<Element Type="ISqlDynamicColumnSource" Name="[dbo].[CreateBusinessLightTEST].[@business]">
+						<Relationship Name="Columns">
+							<Entry>
+								<Element Type="ISql100SimpleColumn" Name="[dbo].[CreateBusinessLightTEST].[@business].[BusinessId]">
+									<Relationship Name="TypeSpecifier">
+										<Entry>
+											<Element Type="ISql90TypeSpecifier">
+												<Relationship Name="Type">
+													<Entry>
+														<References ExternalSource="BuiltIns" Name="[int]" />
+													</Entry>
+												</Relationship>
+											</Element>
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISqlDynamicColumnSource" Name="[dbo].[CreateBusinessLightTEST].[@BusinessLight]" Disambiguator="1">
+						<Relationship Name="Columns">
+							<Entry>
+								<Element Type="ISql100SimpleColumn" Name="[dbo].[CreateBusinessLightTEST].[@BusinessLight].[ExternalId]">
+									<Property Name="IsNullable" Value="False" />
+									<Relationship Name="TypeSpecifier">
+										<Entry>
+											<Element Type="ISql90TypeSpecifier">
+												<Property Name="IsMax" Value="True" />
+												<Relationship Name="Type">
+													<Entry>
+														<References ExternalSource="BuiltIns" Name="[varchar]" />
+													</Entry>
+												</Relationship>
+											</Element>
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="ISql100SimpleColumn" Name="[dbo].[CreateBusinessLightTEST].[@BusinessLight].[SourceId]">
+									<Relationship Name="TypeSpecifier">
+										<Entry>
+											<Element Type="ISql90TypeSpecifier">
+												<Relationship Name="Type">
+													<Entry>
+														<References ExternalSource="BuiltIns" Name="[int]" />
+													</Entry>
+												</Relationship>
+											</Element>
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[CreateBusinessLightTEST].[@BusinessLight]">
+						<Property Name="IsReadOnly" Value="True" />
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References Name="[dbo].[BusinessLight]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="1281" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE CreateBusinessLightTEST&#xD;&#xA;&#x9;@BusinessLight AS BusinessLight READONLY&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="ISql100Procedure" Name="[dbo].[LoginCreate]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+BEGIN
+	
+	declare @userId Table(userid int, ChangeType VARCHAR(100))
+	DECLARE @IsNEW VARCHAR(10)
+
+	
+	SELECT @IsNEW = 'false'
+
+	
+	
+		MERGE dbo.UserLogin AS Target
+		USING (SELECT	
+					@ExternalId AS Externalid,
+					@SourceID AS Sourceid,
+					HASHBYTES('MD5',@ExternalId + CAST(@SourceID AS VARCHAR(4))) AS externalidCheckSum,
+					0 AS disabled
+						) AS Source
+			ON Target.externalidCheckSum = Source.externalidCheckSum
+		WHEN MATCHED THEN 
+			UPDATE SET Target.LastLoginDateTime = GETUTCDATE()
+		WHEN NOT MATCHED THEN
+			INSERT 
+			(
+				externalid,
+				sourceid,
+				externalidCheckSum,
+				disabled
+			)
+			VALUES
+			(
+				SOURCE.externalid,
+				SOURCE.sourceid,
+				SOURCE.externalidCheckSum,
+				SOURCE.disabled
+			)
+		OUTPUT	Inserted.UserId, $action into @userId;
+
+	IF (SELECT ChangeType from @userId) = 'INSERT'
+	BEGIN
+		
+		INSERT INTO UserCheckIn
+		(UserID)
+		SELECT userid from  @UserID
+	END
+
+	IF NOT EXISTS(SELECT TOP 1 * FROM UserInfo (NOLOCK) WHERE UserID = (SELECT UserID from @userId))
+	BEGIN
+		SELECT @IsNEW = 'true'
+	END
+	
+	SELECT *,@IsNEW AS IsNEW from UserLogin  (NOLOCK) WHERE  externalidCheckSum  = HASHBYTES('MD5',@ExternalId + CAST(@SourceID AS VARCHAR(4)))
+END]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[varchar]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[LoginCreate].[@ExternalId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[LoginCreate].[@SourceID]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[varchar]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserLogin]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserLogin].[ExternalIdCheckSum]" />
+				</Entry>
+				<Entry />
+				<Entry>
+					<References Name="[dbo].[UserLogin].[LastLoginDateTime]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserLogin].[ExternalId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserLogin].[SourceID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserLogin].[ExternalIdCheckSum]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserLogin].[Disabled]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[LoginCreate].[@ExternalId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[LoginCreate].[@SourceID]" />
+				</Entry>
+				<Entry />
+				<Entry />
+				<Entry>
+					<References Name="[dbo].[UserLogin].[UserID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[LoginCreate].[@userId].[ChangeType]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserCheckIn]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserCheckIn].[UserID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[LoginCreate].[@userId].[userid]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserInfo]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserInfo].[UserID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[LoginCreate].[@userId].[userid]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[varchar]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DynamicObjects">
+				<Entry>
+					<Element Type="ISqlDynamicColumnSource" Name="[dbo].[LoginCreate].[@userId]">
+						<Relationship Name="Columns">
+							<Entry>
+								<Element Type="ISql100SimpleColumn" Name="[dbo].[LoginCreate].[@userId].[userid]">
+									<Relationship Name="TypeSpecifier">
+										<Entry>
+											<Element Type="ISql90TypeSpecifier">
+												<Relationship Name="Type">
+													<Entry>
+														<References ExternalSource="BuiltIns" Name="[int]" />
+													</Entry>
+												</Relationship>
+											</Element>
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+							<Entry>
+								<Element Type="ISql100SimpleColumn" Name="[dbo].[LoginCreate].[@userId].[ChangeType]">
+									<Relationship Name="TypeSpecifier">
+										<Entry>
+											<Element Type="ISql90TypeSpecifier">
+												<Property Name="Length" Value="100" />
+												<Relationship Name="Type">
+													<Entry>
+														<References ExternalSource="BuiltIns" Name="[varchar]" />
+													</Entry>
+												</Relationship>
+											</Element>
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[LoginCreate].[@UserName]">
+						<Property Name="DefaultExpressionScript">
+							<Value><![CDATA[NULL]]></Value>
+						</Property>
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="10" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[LoginCreate].[@UserPassword]">
+						<Property Name="DefaultExpressionScript">
+							<Value><![CDATA[NULL]]></Value>
+						</Property>
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="20" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[LoginCreate].[@ExternalId]">
+						<Property Name="DefaultExpressionScript">
+							<Value><![CDATA[NULL]]></Value>
+						</Property>
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="30" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[LoginCreate].[@SourceID]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[smallint]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="1401" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE LoginCreate&#xD;&#xA;&#x9;@UserName&#x9;nvarchar(10) = NULL,&#xD;&#xA;&#x9;@UserPassword nvarchar(20) = NULL ,&#xD;&#xA;&#x9;@ExternalId varchar (30) = NULL,&#xD;&#xA;&#x9;@SourceID [smallint]&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="ISql100Procedure" Name="[dbo].[LoginPasswordGet]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+BEGIN
+	
+	SELECT * FROM UserLogin (NOLOCK) WHERE externalidCheckSum = HASHBYTES('MD5',@UserName) AND UserName = @UserName AND UserPassword = HASHBYTES('MD5',@UserPassword)
+
+END]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[UserLogin]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserLogin].[ExternalIdCheckSum]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[LoginPasswordGet].[@UserName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserLogin].[UserName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserLogin].[UserPassword]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[LoginPasswordGet].[@UserPassword]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[LoginPasswordGet].[@UserName]">
+						<Property Name="DefaultExpressionScript">
+							<Value><![CDATA[NULL]]></Value>
+						</Property>
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="10" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[LoginPasswordGet].[@UserPassword]">
+						<Property Name="DefaultExpressionScript">
+							<Value><![CDATA[NULL]]></Value>
+						</Property>
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="20" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="287" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE LoginPasswordGet&#xD;&#xA;&#x9;@UserName&#x9;nvarchar(10) = NULL,&#xD;&#xA;&#x9;@UserPassword nvarchar(20) = NULL&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="ISql100Procedure" Name="[dbo].[LoginPasswordReset]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+BEGIN
+	
+	IF @UserId = 0
+	BEGIN
+		UPDATE UserLogin 
+		SET UserPassword = @UserPassword
+		WHERE externalidCheckSum = HASHBYTES('MD5',@UserName) AND UserName = @UserName
+	END
+	ELSE
+	BEGIN
+		UPDATE UserLogin 
+		SET UserPassword = @UserPassword
+		WHERE UserID = @UserId
+	END
+
+END]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[LoginPasswordReset].[@UserId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserLogin]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserLogin].[UserPassword]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[LoginPasswordReset].[@UserPassword]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserLogin].[ExternalIdCheckSum]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[LoginPasswordReset].[@UserName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserLogin].[UserName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserLogin].[UserID]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[LoginPasswordReset].[@UserId]">
+						<Property Name="DefaultExpressionScript">
+							<Value><![CDATA[0]]></Value>
+						</Property>
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[LoginPasswordReset].[@UserName]">
+						<Property Name="DefaultExpressionScript">
+							<Value><![CDATA[NULL]]></Value>
+						</Property>
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="10" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[LoginPasswordReset].[@UserPassword]">
+						<Property Name="DefaultExpressionScript">
+							<Value><![CDATA[NULL]]></Value>
+						</Property>
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="20" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="418" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE LoginPasswordReset&#xD;&#xA;&#x9;@UserId INT = 0,&#xD;&#xA;&#x9;@UserName&#x9;nvarchar(10) = NULL,&#xD;&#xA;&#x9;@UserPassword nvarchar(20) = NULL&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="ISql100Procedure" Name="[dbo].[LoginPasswordValidateCreate]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+BEGIN
+	
+	IF NOT EXISTS (SELECT TOP 1 * FROM UserLogin (NOLOCK) WHERE externalidCheckSum = HASHBYTES('MD5',@UserName) AND UserName = @UserName)
+	BEGIN
+		INSERT INTO dbo.UserLogin
+		(
+			UserName
+			,UserPassword
+			,ExternalId
+			,SourceID
+			,ExternalIdCheckSum
+			,LastLoginDateTime
+			,CreatedDtTm
+			,CreatedBy
+			,Disabled
+		)
+		VALUES
+		(
+			@UserName
+			,HASHBYTES('MD5',@UserPassword)
+			,0
+			,0
+			,HASHBYTES('MD5',@UserName)
+			,GETUTCDATE()
+			,GETUTCDATE()
+			,'system'
+			,0
+		)
+		SELECT 
+			UserName
+			,UserPassword
+			,ExternalId
+			,SourceID
+			,ExternalIdCheckSum
+			,LastLoginDateTime
+			,CreatedDtTm
+			,CreatedBy
+			,Disabled
+			,'true' AS IsNEW
+			,'false' AS 'Exists'
+		FROM UserLogin (NOLOCK)
+		WHERE Userid = @@IDENTITY
+	END
+	ELSE
+	BEGIN
+		
+		SELECT 
+			''	UserName
+			,''	UserPassword
+			,''	ExternalId
+			,''	SourceID
+			,''	ExternalIdCheckSum
+			,''	LastLoginDateTime
+			,GETUTCDATE() CreatedDtTm
+			,''	CreatedBy
+			,0	Disabled
+			,'false' AS IsNEW
+			,'true' AS 'Exists'
+	END
+
+END]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[UserLogin]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserLogin].[ExternalIdCheckSum]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[LoginPasswordValidateCreate].[@UserName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserLogin].[UserName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserLogin].[UserName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserLogin].[UserPassword]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserLogin].[ExternalId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserLogin].[SourceID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserLogin].[ExternalIdCheckSum]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserLogin].[LastLoginDateTime]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserLogin].[CreatedDtTm]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserLogin].[CreatedBy]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserLogin].[Disabled]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[LoginPasswordValidateCreate].[@UserPassword]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserLogin]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserLogin].[UserID]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[LoginPasswordValidateCreate].[@UserName]">
+						<Property Name="DefaultExpressionScript">
+							<Value><![CDATA[NULL]]></Value>
+						</Property>
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="10" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[LoginPasswordValidateCreate].[@UserPassword]">
+						<Property Name="DefaultExpressionScript">
+							<Value><![CDATA[NULL]]></Value>
+						</Property>
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="20" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="1189" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE LoginPasswordValidateCreate&#xD;&#xA;&#x9;@UserName&#x9;nvarchar(10) = NULL,&#xD;&#xA;&#x9;@UserPassword nvarchar(20) = NULL&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="ISql100Table" Name="[dbo].[UserChat]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[UserChat].[ChatId]">
+						<Property Name="IsNullable" Value="False" />
+						<Property Name="IsIdentity" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[bigint]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[UserChat].[HigherUserID]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[UserChat].[LowerUserID]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[UserChat].[IsHigherMessage]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[bit]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+						<AttachedAnnotation Disambiguator="19" />
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[UserChat].[UserMessage]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="120" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[UserChat].[CreatedDtTm]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[datetime]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+						<AttachedAnnotation Disambiguator="20" />
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="24" />
+		</Element>
+		<Element Type="ISql100Index" Name="[dbo].[UserChat].[UNCIHighLowId]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[UserChat].[HigherUserID]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[UserChat].[LowerUserID]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="IndexedObject">
+				<Entry>
+					<References Name="[dbo].[UserChat]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100Procedure" Name="[dbo].[UserChatAdd]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+BEGIN
+	DECLARE @High INT, 
+			@Low INT,
+			@IsHigherMessage BIT = 0
+
+	IF @FromUserId > @ToUserId
+		SELECT @High = @FromUserId, @Low = @ToUserId
+	ELSE
+		SELECT @High = @ToUserId, @Low = @FromUserId
+
+		IF @High = @FromUserId
+			SELECT @IsHigherMessage = 1
+	
+
+	INSERT INTO UserChat
+	(
+		HigherUserID,
+		LowerUserID,
+		IsHigherMessage,
+		UserMessage
+	)
+	SELECT
+		@High,
+		@Low,
+		@IsHigherMessage,
+		@Message
+
+	SELECT @@IDENTITY AS ChatId
+
+END]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[int]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[int]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[bit]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserChatAdd].[@FromUserId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserChatAdd].[@ToUserId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserChat]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserChat].[HigherUserID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserChat].[LowerUserID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserChat].[IsHigherMessage]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserChat].[UserMessage]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserChatAdd].[@Message]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[UserChatAdd].[@FromUserId]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[UserChatAdd].[@ToUserId]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[UserChatAdd].[@Message]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="120" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="564" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE UserChatAdd&#xD;&#xA;&#x9;@FromUserId&#x9;INT,&#xD;&#xA;&#x9;@ToUserId INT,&#xD;&#xA;&#x9;@Message NVARCHAR (120)&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="ISql100Procedure" Name="[dbo].[UserChatGet]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+BEGIN
+	DECLARE @High INT, 
+			@Low INT,
+			@IsHigherMessage BIT = 0
+
+	IF @FromUserId > @ToUserId
+		SELECT @High = @FromUserId, @Low = @ToUserId
+	ELSE
+		SELECT @High = @ToUserId, @Low = @FromUserId
+
+	IF @NoOfChat = 0
+		SELECT 
+			ChatId
+			,HigherUserID
+			,LowerUserID
+			,IsHigherMessage
+			,UserMessage
+			,CreatedDtTm 
+		FROM UserChat (NOLOCK)
+		WHERE 
+			HigherUserID = @High
+			AND LowerUserID = @Low
+			AND ChatId > @ChatId
+		ORDER BY CreatedDtTm DESC
+	ELSE
+		SELECT TOP (@NoOfChat)
+			ChatId
+			,HigherUserID
+			,LowerUserID
+			,IsHigherMessage
+			,UserMessage
+			,CreatedDtTm 
+		FROM UserChat (NOLOCK)
+		WHERE 
+			HigherUserID = @High
+			AND LowerUserID = @Low
+			AND ChatId > @ChatId
+		ORDER BY CreatedDtTm DESC
+
+END]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[int]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[int]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[bit]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserChatGet].[@FromUserId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserChatGet].[@ToUserId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserChatGet].[@NoOfChat]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserChat]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserChat].[ChatId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserChat].[HigherUserID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserChat].[LowerUserID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserChat].[IsHigherMessage]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserChat].[UserMessage]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserChat].[CreatedDtTm]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserChatGet].[@ChatId]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[UserChatGet].[@FromUserId]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[UserChatGet].[@ToUserId]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[UserChatGet].[@ChatId]">
+						<Property Name="DefaultExpressionScript">
+							<Value><![CDATA[0]]></Value>
+						</Property>
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[bigint]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[UserChatGet].[@NoOfChat]">
+						<Property Name="DefaultExpressionScript">
+							<Value><![CDATA[0]]></Value>
+						</Property>
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="876" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE UserChatGet&#xD;&#xA;&#x9;@FromUserId&#x9;INT,&#xD;&#xA;&#x9;@ToUserId INT,&#xD;&#xA;&#x9;@ChatId&#x9;BIGINT = 0,&#xD;&#xA;&#x9;@NoOfChat INT = 0&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="ISql100Table" Name="[dbo].[UserChatHistory]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[UserChatHistory].[ChatId]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[bigint]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[UserChatHistory].[HigherUserID]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[UserChatHistory].[LowerUserID]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[UserChatHistory].[IsHigherMessage]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[bit]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+						<AttachedAnnotation Disambiguator="17" />
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[UserChatHistory].[UserMessage]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="120" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[UserChatHistory].[CreatedDtTm]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[datetime]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+						<AttachedAnnotation Disambiguator="18" />
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100Table" Name="[dbo].[UserCheckIn]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[UserCheckIn].[UserID]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[UserCheckIn].[StartTime]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[datetime]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[UserCheckIn].[CheckinCount]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+						<AttachedAnnotation Disambiguator="6" />
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[UserCheckIn].[UpdatedDtTm]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[datetime]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+						<AttachedAnnotation Disambiguator="7" />
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[UserCheckIn].[BusinessId]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="25" />
+		</Element>
+		<Element Type="ISql100Index" Name="[dbo].[UserCheckIn].[NCIBusinessID]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[UserCheckIn].[BusinessId]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="IndexedObject">
+				<Entry>
+					<References Name="[dbo].[UserCheckIn]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100Index" Name="[dbo].[UserCheckIn].[NCIUpdatedDtTm]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[UserCheckIn].[UpdatedDtTm]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="IndexedObject">
+				<Entry>
+					<References Name="[dbo].[UserCheckIn]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100Index" Name="[dbo].[UserCheckIn].[NCIUserID]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[UserCheckIn].[UserID]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="IndexedObject">
+				<Entry>
+					<References Name="[dbo].[UserCheckIn]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100Table" Name="[dbo].[UserCheckInHistory]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[UserCheckInHistory].[UserID]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[UserCheckInHistory].[StartTime]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[datetime]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[UserCheckInHistory].[EndTime]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[datetime]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[UserCheckInHistory].[CheckinCount]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+						<AttachedAnnotation Disambiguator="5" />
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[UserCheckInHistory].[UpdatedDtTm]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[datetime]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[UserCheckInHistory].[UpdatedBy]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="20" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[UserCheckInHistory].[BusinessId]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[UserCheckInHistory].[CheckinID]">
+						<Property Name="IsNullable" Value="False" />
+						<Property Name="IsIdentity" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="26" />
+		</Element>
+		<Element Type="ISql100Table" Name="[dbo].[UserImageHistory]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[UserImageHistory].[UserID]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[UserImageHistory].[PictureLocation]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="8000" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[UserImageHistory].[CreatedDtTm]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[datetime]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+						<AttachedAnnotation Disambiguator="16" />
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100Procedure" Name="[dbo].[UserImageURLUpdate]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+BEGIN	
+	DECLARE @OldImageURL VARCHAR(8000)
+	SELECT @OldImageURL = ISNULL(PictureLocation,'') FROM UserInfo (NOLOCK) WHERE UserID = @UserId
+
+	IF @OldImageURL != @ImageURL
+	BEGIN
+		UPDATE UserInfo SET PictureLocation = @ImageURL WHERE UserID = @UserId
+		INSERT INTO UserImageHistory
+		(UserID, PictureLocation)
+		VALUES 
+		(@UserId, @OldImageURL)
+	END
+END]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[varchar]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserInfo]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserInfo].[PictureLocation]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserInfo].[UserID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserImageURLUpdate].[@UserId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserImageURLUpdate].[@ImageURL]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserImageHistory]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserImageHistory].[UserID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserImageHistory].[PictureLocation]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[UserImageURLUpdate].[@UserId]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[UserImageURLUpdate].[@ImageURL]">
+						<Property Name="DefaultExpressionScript">
+							<Value><![CDATA[NULL]]></Value>
+						</Property>
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="8000" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="454" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE UserImageURLUpdate&#xD;&#xA;&#x9;@UserId&#x9;INT&#xD;&#xA;&#x9;,@ImageURL VARCHAR(8000) = NULL&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="ISql100Table" Name="[dbo].[UserInfo]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[UserInfo].[UserID]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[UserInfo].[Handle]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="60" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[UserInfo].[Email]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="140" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[UserInfo].[InstantTitle]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="140" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[UserInfo].[PictureLocation]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="8000" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[UserInfo].[OnlineStatusID]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[smallint]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+						<AttachedAnnotation Disambiguator="8" />
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[UserInfo].[UpdatedDtTm]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[datetime]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+						<AttachedAnnotation Disambiguator="9" />
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[UserInfo].[UpdatedBy]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="80" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[UserInfo].[Gender]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[smallint]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[UserInfo].[Preference]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[smallint]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[UserInfo].[Age]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[smallint]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[UserInfo].[CreatedDtTm]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[datetime]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+						<AttachedAnnotation Disambiguator="10" />
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[UserInfo].[CreatedBy]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="20" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="27" />
+		</Element>
+		<Element Type="ISql100Procedure" Name="[dbo].[UserInfoCreate]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+BEGIN
+	IF EXISTS(SELECT * FROM UserLogin (NOLOCK) WHERE UserID = @UserId)
+	BEGIN
+		;MERGE dbo.UserInfo AS Target
+		USING (SELECT	@UserId AS UserID ,
+						--@PictureLocation AS PictureLocation, 
+						@Gender AS Gender, 
+						@Preference AS Preference, 
+						@Age AS Age, 
+						@Status AS OnlineStatusID,
+						@Email AS Email,
+						@Handle AS Handle
+						) AS Source
+			ON Target.UserID = Source.UserID
+		WHEN MATCHED THEN UPDATE SET
+			--Target.PictureLocation = ISNULL(Source.PictureLocation,Target.PictureLocation)
+			Target.Gender = Source.Gender,
+			Target.Preference = Source.Preference,
+			Target.Age = Source.Age,
+			Target.Email = Source.Email,
+			Target.Handle = Source.Handle,
+			Target.UpdatedDtTm = GETUTCDATE()
+		WHEN NOT MATCHED THEN
+		INSERT 
+			(
+				UserID,
+				--PictureLocation,
+				Gender,
+				Preference,
+				Age,
+				OnlineStatusID,
+				Email,
+				Handle
+			)
+			VALUES
+			(
+				SOURCE.UserID,
+				--SOURCE.PictureLocation,
+				SOURCE.Gender,
+				SOURCE.Preference,
+				SOURCE.Age,
+				SOURCE.OnlineStatusID,
+				SOURCE.Email,
+				SOURCE.Handle
+			) ;
+	END
+	ELSE
+	BEGIN
+		RAISERROR ( N'INVALID %s %d.', 18, 1, 'UserId', @UserId);
+	END
+END]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[UserLogin]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserLogin].[UserID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserInfoCreate].[@UserId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserInfoCreate].[@Gender]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserInfoCreate].[@Preference]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserInfoCreate].[@Age]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserInfoCreate].[@Status]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserInfoCreate].[@Email]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserInfoCreate].[@Handle]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserInfo]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserInfo].[UserID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserInfoCreate].[@UserId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserInfo].[Gender]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserInfoCreate].[@Gender]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserInfo].[Preference]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserInfoCreate].[@Preference]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserInfo].[Age]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserInfoCreate].[@Age]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserInfo].[Email]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserInfoCreate].[@Email]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserInfo].[Handle]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserInfoCreate].[@Handle]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserInfo].[UpdatedDtTm]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserInfo].[UserID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserInfo].[Gender]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserInfo].[Preference]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserInfo].[Age]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserInfo].[OnlineStatusID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserInfo].[Email]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserInfo].[Handle]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserInfoCreate].[@UserId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserInfoCreate].[@Gender]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserInfoCreate].[@Preference]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserInfoCreate].[@Age]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserInfoCreate].[@Status]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserInfoCreate].[@Email]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserInfoCreate].[@Handle]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[UserInfoCreate].[@UserId]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[UserInfoCreate].[@Gender]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[smallint]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[UserInfoCreate].[@Preference]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[smallint]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[UserInfoCreate].[@Age]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[smallint]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[UserInfoCreate].[@Status]">
+						<Property Name="DefaultExpressionScript">
+							<Value><![CDATA[1]]></Value>
+						</Property>
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[smallint]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[UserInfoCreate].[@Email]">
+						<Property Name="DefaultExpressionScript">
+							<Value><![CDATA[NULL]]></Value>
+						</Property>
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="140" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[UserInfoCreate].[@Handle]">
+						<Property Name="DefaultExpressionScript">
+							<Value><![CDATA[NULL]]></Value>
+						</Property>
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="60" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="1477" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE UserInfoCreate&#xD;&#xA;&#x9;@UserId&#x9;&#x9;&#x9;&#x9;int,&#xD;&#xA;--&#x9;@PictureLocation&#x9;varchar(800) = NULL,&#xD;&#xA;&#x9;@Gender&#x9;&#x9;&#x9;&#x9;smallint,&#xD;&#xA;&#x9;@Preference&#x9;&#x9;&#x9;smallint,&#xD;&#xA;&#x9;@Age&#x9;&#x9;&#x9;&#x9;smallint,&#xD;&#xA;&#x9;@Status&#x9;&#x9;&#x9;&#x9;smallint = 1,&#xD;&#xA;&#x9;@Email&#x9;&#x9;&#x9;&#x9;nvarchar(140) = NULL,&#xD;&#xA;&#x9;@Handle&#x9;&#x9;&#x9;&#x9;nvarchar(60) = NULL&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="ISql100Procedure" Name="[dbo].[UserInfoGet]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+BEGIN	
+	SELECT * from UserInfo (NOLOCK) WHERE  UserID  = @UserId
+END]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[UserInfo]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserInfo].[UserID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserInfoGet].[@UserId]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[UserInfoGet].[@UserId]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="118" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE UserInfoGet&#xD;&#xA;&#x9;@UserId&#x9;INT&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="ISql100Table" Name="[dbo].[UserLogin]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[UserLogin].[UserID]">
+						<Property Name="IsNullable" Value="False" />
+						<Property Name="IsIdentity" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[UserLogin].[UserName]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="10" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[UserLogin].[UserPassword]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="20" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[UserLogin].[ExternalId]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="30" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[UserLogin].[SourceID]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[smallint]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[UserLogin].[ExternalIdCheckSum]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varbinary]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[UserLogin].[LastLoginDateTime]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[datetime]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+						<AttachedAnnotation Disambiguator="11" />
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[UserLogin].[CreatedDtTm]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[datetime]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+						<AttachedAnnotation Disambiguator="12" />
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[UserLogin].[CreatedBy]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="20" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[UserLogin].[Disabled]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[bit]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="28" />
+		</Element>
+		<Element Type="ISql100Index" Name="[dbo].[UserLogin].[UNCIExternalIdCheckSum]">
+			<Property Name="IsUnique" Value="True" />
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[UserLogin].[ExternalIdCheckSum]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="IndexedObject">
+				<Entry>
+					<References Name="[dbo].[UserLogin]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100Procedure" Name="[dbo].[UserOnlineStatusUpdate]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+BEGIN	
+	UPDATE UserInfo SET OnlineStatusID = @StatusId WHERE UserID = @UserId
+END]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[UserInfo]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserInfo].[OnlineStatusID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserOnlineStatusUpdate].[@StatusId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserInfo].[UserID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserOnlineStatusUpdate].[@UserId]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[UserOnlineStatusUpdate].[@UserId]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[UserOnlineStatusUpdate].[@StatusId]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[smallint]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="164" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE UserOnlineStatusUpdate&#xD;&#xA;&#x9;@UserId&#x9;INT&#xD;&#xA;&#x9;,@StatusId SMALLINT&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="ISql100Table" Name="[dbo].[UserSelection]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[UserSelection].[FromUserID]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[UserSelection].[ToUserId]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[UserSelection].[StatusId]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[smallint]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[UserSelection].[UpdatedDtTm]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[datetime]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+						<AttachedAnnotation Disambiguator="22" />
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="29" />
+		</Element>
+		<Element Type="ISql100Index" Name="[dbo].[UserSelection].[UNCIBusinessIdFromUserID]">
+			<Property Name="IsUnique" Value="True" />
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[UserSelection].[FromUserID]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[UserSelection].[ToUserId]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="IndexedObject">
+				<Entry>
+					<References Name="[dbo].[UserSelection]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100Procedure" Name="[dbo].[UserSelectionGet]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+BEGIN	
+	
+	IF @TypeId = 1
+		SELECT ToUserId AS ToUserId FROM UserSelection (NOLOCK)
+		WHERE 
+			FromUserID = @UserId
+			AND StatusId = 1
+	ELSE IF @TypeId = 2
+		SELECT ToUserId ToUserId FROM UserSelection (NOLOCK)
+		WHERE 
+			FromUserID = @UserId
+			AND StatusId = 0
+	ELSE IF @TypeId = 3
+		SELECT FromUserID ToUserId FROM UserSelection (NOLOCK)
+		WHERE 
+			FromUserID IN 
+				(SELECT ToUserId FROM UserSelection (NOLOCK)
+				WHERE FromUserID = @UserId AND StatusId = 1)
+			AND ToUserId = @UserId
+			AND StatusId = 1
+	ELSE IF @TypeId = 4
+		SELECT FromUserID ToUserId FROM UserSelection (NOLOCK)
+		WHERE 
+			FromUserID IN 
+				(SELECT ToUserId FROM UserSelection (NOLOCK)
+				WHERE FromUserID = @UserId AND StatusId = 0)
+			AND ToUserId = @UserId
+			AND StatusId = 1
+	ELSE IF @TypeId = 5
+		SELECT ToUserId AS ToUserId, StatusId FROM UserSelection (NOLOCK)
+		WHERE 
+			FromUserID = @UserId
+	ELSE IF @TypeId = 6
+		SELECT FromUserID AS ToUserId, StatusId FROM UserSelection (NOLOCK)
+		WHERE 
+			ToUserId = @UserId
+			
+END]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[UserSelectionGet].[@TypeId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserSelection]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserSelection].[ToUserId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserSelection].[FromUserID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserSelectionGet].[@UserId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserSelection].[StatusId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserSelection]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserSelection].[ToUserId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserSelection].[FromUserID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserSelection].[StatusId]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[UserSelectionGet].[@UserId]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[UserSelectionGet].[@TypeId]">
+						<Property Name="DefaultExpressionScript">
+							<Value><![CDATA[0]]></Value>
+						</Property>
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[smallint]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="1255" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE UserSelectionGet&#xD;&#xA;&#x9;@UserId&#x9;INT,&#xD;&#xA;&#x9;@TypeId&#x9;SMALLINT = 0 /* 0=ALL, 1=LIKES, 2=DISLIKES, 3=HITS (order by touser likes) 4=MISSES (order by touser likes) 5=My choices 6=others choices*/&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="ISql100Table" Name="[dbo].[UserSelectionHistory]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[UserSelectionHistory].[UserCheckInId]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[UserSelectionHistory].[FromUserID]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[UserSelectionHistory].[ToUserId]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[UserSelectionHistory].[StatusId]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[smallint]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[UserSelectionHistory].[UpdatedDtTm]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[datetime]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+						<AttachedAnnotation Disambiguator="21" />
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100Procedure" Name="[dbo].[UserSelectionUpdate]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+BEGIN	
+
+	;MERGE dbo.UserSelection AS Target
+	USING (SELECT @FromUserId AS FromUserId , @ToUserId AS ToUserId) AS Source
+		ON Target.FromUserId = Source.FromUserId
+		AND Target.ToUserId = Source.ToUserId
+	WHEN MATCHED THEN UPDATE SET
+		Target.Statusid = @Statusid,
+		Target.UpdatedDtTm = GETUTCDATE()
+	WHEN NOT MATCHED THEN
+	INSERT 
+		(
+			FromUserId,
+			ToUserId,
+			Statusid,
+			UpdatedDtTm
+		)
+		VALUES
+		(
+			SOURCE.FromUserId,
+			SOURCE.ToUserId,
+			@Statusid,
+			GETUTCDATE()
+		) ;
+			
+END]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[UserSelectionUpdate].[@FromUserId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserSelectionUpdate].[@ToUserId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserSelection]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserSelection].[FromUserID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserSelectionUpdate].[@FromUserId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserSelection].[ToUserId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserSelectionUpdate].[@ToUserId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserSelection].[StatusId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserSelectionUpdate].[@Statusid]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserSelection].[UpdatedDtTm]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserSelection].[FromUserID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserSelection].[ToUserId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserSelection].[StatusId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserSelection].[UpdatedDtTm]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserSelectionUpdate].[@FromUserId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserSelectionUpdate].[@ToUserId]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[UserSelectionUpdate].[@FromUserId]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[UserSelectionUpdate].[@ToUserId]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[UserSelectionUpdate].[@Statusid]">
+						<Property Name="DefaultExpressionScript">
+							<Value><![CDATA[0]]></Value>
+						</Property>
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[smallint]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="628" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE UserSelectionUpdate&#xD;&#xA;&#x9;@FromUserId&#x9;&#x9;&#x9;INT,&#xD;&#xA;&#x9;@ToUserId&#x9;&#x9;&#x9;INT,&#xD;&#xA;&#x9;@Statusid&#x9;&#x9;&#x9;SMALLINT = 0&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="ISql100Procedure" Name="[dbo].[UserTitleUpdate]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+BEGIN	
+	UPDATE UserInfo SET InstantTitle = @Title WHERE UserID = @UserId
+END]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[UserInfo]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserInfo].[InstantTitle]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserTitleUpdate].[@Title]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserInfo].[UserID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserTitleUpdate].[@UserId]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[UserTitleUpdate].[@UserId]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[UserTitleUpdate].[@Title]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="140" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="154" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE UserTitleUpdate&#xD;&#xA;&#x9;@UserId&#x9;INT&#xD;&#xA;&#x9;,@Title NVARCHAR(140)&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="ISql100Procedure" Name="[dbo].[VisibleProfilesByBusinessGet]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+BEGIN	
+	DECLARE @BusinessID INT
+			,@Preference SMALLINT
+			
+	SELECT	@BusinessID = 0
+			,@Preference = 0 
+	
+	SELECT @BusinessID = BusinessId FROM UserCheckIn (NOLOCK) WHERE UserID = @UserId
+	SELECT @Preference = Preference FROM UserInfo (NOLOCK) WHERE UserID = @UserId
+	
+	IF @Preference = 3
+		SELECT u.* FROM UserInfo (NOLOCK) u
+		JOIN UserCheckIn (NOLOCK) uc
+		ON uc.UserID = u.UserID
+		WHERE
+			uc.BusinessId = @BusinessID
+			AND u.OnlineStatusID > 0
+			AND uc.UserID <> @UserId
+			
+	ELSE
+		SELECT u.* FROM UserInfo (NOLOCK) u
+		JOIN UserCheckIn (NOLOCK) uc
+		ON uc.UserID = u.UserID
+		WHERE
+			uc.BusinessId = @BusinessID
+			AND u.Gender = @Preference
+			AND u.OnlineStatusID > 0
+			AND uc.UserID <> @UserId
+END]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[int]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[smallint]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserCheckIn]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserCheckIn].[BusinessId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserCheckIn].[UserID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[VisibleProfilesByBusinessGet].[@UserId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserInfo]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserInfo].[Preference]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserInfo].[UserID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserCheckIn].[UserID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserInfo].[UserID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserCheckIn].[BusinessId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserInfo].[OnlineStatusID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UserInfo].[Gender]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[VisibleProfilesByBusinessGet].[@UserId]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="807" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE VisibleProfilesByBusinessGet&#xD;&#xA;&#x9;@UserId&#x9;INT&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="ISql100PrimaryKeyConstraint" Name="[dbo].[XPKBusiness]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[Business].[BusinessId]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Business]" />
+				</Entry>
+			</Relationship>
+			<AttachedAnnotation Disambiguator="23" />
+		</Element>
+		<Element Type="ISql100PrimaryKeyConstraint" Name="[dbo].[XPKBusinessCheckIn]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[UserCheckIn].[UserID]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[UserCheckIn]" />
+				</Entry>
+			</Relationship>
+			<AttachedAnnotation Disambiguator="25" />
+		</Element>
+		<Element Type="ISql100PrimaryKeyConstraint" Name="[dbo].[XPKBusinessCheckInHistory]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[UserCheckInHistory].[CheckinID]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[UserCheckInHistory]" />
+				</Entry>
+			</Relationship>
+			<AttachedAnnotation Disambiguator="26" />
+		</Element>
+		<Element Type="ISql100PrimaryKeyConstraint" Name="[dbo].[XPKUserChat]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[UserChat].[ChatId]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[UserChat]" />
+				</Entry>
+			</Relationship>
+			<AttachedAnnotation Disambiguator="24" />
+		</Element>
+		<Element Type="ISql100PrimaryKeyConstraint" Name="[dbo].[XPKUserInfo]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[UserInfo].[UserID]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[UserInfo]" />
+				</Entry>
+			</Relationship>
+			<AttachedAnnotation Disambiguator="27" />
+		</Element>
+		<Element Type="ISql100PrimaryKeyConstraint" Name="[dbo].[XPKUserLogin]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[UserLogin].[UserID]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[UserLogin]" />
+				</Entry>
+			</Relationship>
+			<AttachedAnnotation Disambiguator="28" />
+		</Element>
+		<Element Type="ISql100PrimaryKeyConstraint" Name="[dbo].[XPKUserSelection]">
+			<Property Name="IsClustered" Value="False" />
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[UserSelection].[FromUserID]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[UserSelection].[ToUserId]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[UserSelection]" />
+				</Entry>
+			</Relationship>
+			<AttachedAnnotation Disambiguator="29" />
+		</Element>
+	</Model>
+</DataSchemaModel>

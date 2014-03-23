@@ -1,0 +1,4 @@
+C:\mydev\mynglzall\mynglz\Incyte\Common\bin\Release\Common.dll
+C:\mydev\mynglzall\mynglz\Incyte\Common\bin\Release\Common.pdb
+C:\mydev\mynglzall\mynglz\Incyte\Common\obj\Release\Common.dll
+C:\mydev\mynglzall\mynglz\Incyte\Common\obj\Release\Common.pdb

@@ -1,0 +1,1 @@
+﻿CREATE NONCLUSTERED INDEX NCIUpdatedDtTm ON UserCheckIn (UpdatedDtTm)

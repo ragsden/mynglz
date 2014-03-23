@@ -1,0 +1,5 @@
+C:\mydev\mynglzall\mynglz\Incyte\test1wcf\bin\test1wcf.dll
+C:\mydev\mynglzall\mynglz\Incyte\test1wcf\bin\test1wcf.pdb
+C:\mydev\mynglzall\mynglz\Incyte\test1wcf\obj\Release\ResolveAssemblyReference.cache
+C:\mydev\mynglzall\mynglz\Incyte\test1wcf\obj\Release\test1wcf.dll
+C:\mydev\mynglzall\mynglz\Incyte\test1wcf\obj\Release\test1wcf.pdb

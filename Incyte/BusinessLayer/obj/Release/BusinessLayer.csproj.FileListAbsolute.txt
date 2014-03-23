@@ -1,0 +1,10 @@
+C:\mydev\mynglzall\mynglz\Incyte\BusinessLayer\bin\Release\BusinessLayer.dll.config
+C:\mydev\mynglzall\mynglz\Incyte\BusinessLayer\bin\Release\BusinessLayer.dll
+C:\mydev\mynglzall\mynglz\Incyte\BusinessLayer\bin\Release\BusinessLayer.pdb
+C:\mydev\mynglzall\mynglz\Incyte\BusinessLayer\bin\Release\Common.dll
+C:\mydev\mynglzall\mynglz\Incyte\BusinessLayer\bin\Release\ResourceLayer.dll
+C:\mydev\mynglzall\mynglz\Incyte\BusinessLayer\bin\Release\Common.pdb
+C:\mydev\mynglzall\mynglz\Incyte\BusinessLayer\bin\Release\ResourceLayer.pdb
+C:\mydev\mynglzall\mynglz\Incyte\BusinessLayer\obj\Release\BusinessLayer.dll
+C:\mydev\mynglzall\mynglz\Incyte\BusinessLayer\obj\Release\BusinessLayer.pdb
+C:\mydev\mynglzall\mynglz\Incyte\BusinessLayer\obj\Release\BusinessLayer.csprojResolveAssemblyReference.cache

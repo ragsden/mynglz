@@ -1,0 +1,12 @@
+C:\mydev\mynglzall\mynglz\Incyte\Delivery\bin\Delivery.dll
+C:\mydev\mynglzall\mynglz\Incyte\Delivery\bin\Delivery.pdb
+C:\mydev\mynglzall\mynglz\Incyte\Delivery\bin\BusinessLayer.dll
+C:\mydev\mynglzall\mynglz\Incyte\Delivery\bin\Common.dll
+C:\mydev\mynglzall\mynglz\Incyte\Delivery\bin\Newtonsoft.Json.dll
+C:\mydev\mynglzall\mynglz\Incyte\Delivery\bin\ResourceLayer.dll
+C:\mydev\mynglzall\mynglz\Incyte\Delivery\bin\BusinessLayer.pdb
+C:\mydev\mynglzall\mynglz\Incyte\Delivery\bin\Common.pdb
+C:\mydev\mynglzall\mynglz\Incyte\Delivery\bin\ResourceLayer.pdb
+C:\mydev\mynglzall\mynglz\Incyte\Delivery\obj\Release\Delivery.dll
+C:\mydev\mynglzall\mynglz\Incyte\Delivery\obj\Release\Delivery.pdb
+C:\mydev\mynglzall\mynglz\Incyte\Delivery\obj\Release\Delivery.csprojResolveAssemblyReference.cache

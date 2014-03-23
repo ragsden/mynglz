@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="3785d376-68f9-4539-9f03-9c2aa8d8caa0" name="raghug@RAGHUGDDSK8R 2012-04-27 17:40:20" runUser="REDMOND\raghug" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="0a033359-9003-4ffc-8645-7fa61a9369c1">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="raghug_RAGHUGDDSK8R 2012-04-27 17_40_20">
+      <DeploymentItem filename="C:\mydev\Incyte\BusinessLayer\bin\Debug\BusinessLayer.dll" />
+      <DeploymentItem filename="C:\mydev\Incyte\ResourceLayer\bin\Debug\ResourceLayer.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-04-27T17:40:20.0757317-07:00" queuing="2012-04-27T17:40:20.0917317-07:00" start="2012-04-27T17:40:20.1017317-07:00" finish="2012-04-27T17:40:20.4817317-07:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="RAGHUGDDSK8R" outcome="Warning" timestamp="2012-04-27T17:40:20.4857317-07:00">
+        <Text>Could not obtain result files from 'C:\mydev\Incyte\TestResults\raghug_RAGHUGDDSK8R 2012-04-27 17_40_20\In'.</Text>
+        <Exception>System.UnauthorizedAccessException: Access to the path 'C:\mydev\Incyte\TestResults\raghug_RAGHUGDDSK8R 2012-04-27 17_40_20\In\RAGHUGDDSK8R\' is denied.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileSystemEnumerableIterator`1.CommonInit()
+   at System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler)
+   at System.IO.Directory.InternalGetFileDirectoryNames(String path, String userPathOriginal, String searchPattern, Boolean includeFiles, Boolean includeDirs, SearchOption searchOption)
+   at System.IO.Directory.GetFiles(String path)
+   at Microsoft.VisualStudio.TestTools.Common.DirectoryTree.GetAllFiles()
+   at Microsoft.VisualStudio.TestTools.Common.DirectoryTree.GetAllFiles()
+   at Microsoft.VisualStudio.TestTools.TestManagement.Tmi.UpdateTestRunAndTestCaseResults(TestRun testRun)</Exception>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="CheckoutCreateDB" storage="c:\mydev\incyte\test\bin\debug\test.dll" id="11ef5593-333e-be35-d461-00effd8ef353">
+      <Execution id="89977bf5-5509-4dc3-96e0-50789f5c0afc" />
+      <TestMethod codeBase="C:/mydev/Incyte/Test/bin/Debug/Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Test.UserServiceTestDB, Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CheckoutCreateDB" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="11ef5593-333e-be35-d461-00effd8ef353" executionId="89977bf5-5509-4dc3-96e0-50789f5c0afc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="89977bf5-5509-4dc3-96e0-50789f5c0afc" testId="11ef5593-333e-be35-d461-00effd8ef353" testName="CheckoutCreateDB" computerName="RAGHUGDDSK8R" duration="00:00:00.0448812" startTime="2012-04-27T17:40:20.1637317-07:00" endTime="2012-04-27T17:40:20.4567317-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="89977bf5-5509-4dc3-96e0-50789f5c0afc">
+    </UnitTestResult>
+  </Results>
+</TestRun>

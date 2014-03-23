@@ -1,0 +1,1 @@
+﻿CREATE NONCLUSTERED INDEX NCIBusinessID ON UserCheckIn (BusinessID)

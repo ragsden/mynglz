@@ -1,0 +1,7 @@
+C:\mydev\mynglzall\mynglz\Incyte\ResourceLayer\bin\Release\ResourceLayer.dll
+C:\mydev\mynglzall\mynglz\Incyte\ResourceLayer\bin\Release\ResourceLayer.pdb
+C:\mydev\mynglzall\mynglz\Incyte\ResourceLayer\bin\Release\Common.dll
+C:\mydev\mynglzall\mynglz\Incyte\ResourceLayer\bin\Release\Common.pdb
+C:\mydev\mynglzall\mynglz\Incyte\ResourceLayer\obj\Release\ResourceLayer.dll
+C:\mydev\mynglzall\mynglz\Incyte\ResourceLayer\obj\Release\ResourceLayer.pdb
+C:\mydev\mynglzall\mynglz\Incyte\ResourceLayer\obj\Release\ResourceLayer.csprojResolveAssemblyReference.cache

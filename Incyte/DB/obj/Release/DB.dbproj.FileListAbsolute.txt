@@ -1,0 +1,8 @@
+C:\mydev\mynglzall\mynglz\Incyte\DB\sql\release\DB.deploymanifest
+C:\mydev\mynglzall\mynglz\Incyte\DB\sql\release\DB.dbschema
+C:\mydev\mynglzall\mynglz\Incyte\DB\obj\Release\DB.dbschema
+C:\mydev\mynglzall\mynglz\Incyte\DB\sql\release\mynglzdb_Script.PreDeployment.sql
+C:\mydev\mynglzall\mynglz\Incyte\DB\sql\release\mynglzdb_Script.PostDeployment.sql
+C:\mydev\mynglzall\mynglz\Incyte\DB\sql\release\mynglzdb_Database.sqlsettings
+C:\mydev\mynglzall\mynglz\Incyte\DB\sql\release\mynglzdb_Database.sqldeployment
+C:\mydev\mynglzall\mynglz\Incyte\DB\sql\release\mynglzdb_Database.sqlcmdvars

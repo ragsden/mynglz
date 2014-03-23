@@ -1,0 +1,15 @@
+C:\mydev\Incyte\test1wcf\bin\test1wcf.dll
+C:\mydev\Incyte\test1wcf\bin\test1wcf.pdb
+C:\mydev\Incyte\test1wcf\obj\Debug\ResolveAssemblyReference.cache
+C:\mydev\Incyte\test1wcf\obj\Debug\test1wcf.dll
+C:\mydev\Incyte\test1wcf\obj\Debug\test1wcf.pdb
+C:\mydev\mynglz\Incyte\test1wcf\bin\test1wcf.dll
+C:\mydev\mynglz\Incyte\test1wcf\bin\test1wcf.pdb
+C:\mydev\mynglz\Incyte\test1wcf\obj\Debug\ResolveAssemblyReference.cache
+C:\mydev\mynglz\Incyte\test1wcf\obj\Debug\test1wcf.dll
+C:\mydev\mynglz\Incyte\test1wcf\obj\Debug\test1wcf.pdb
+C:\mydev\mynglzall\mynglz\Incyte\test1wcf\bin\test1wcf.dll
+C:\mydev\mynglzall\mynglz\Incyte\test1wcf\bin\test1wcf.pdb
+C:\mydev\mynglzall\mynglz\Incyte\test1wcf\obj\Debug\ResolveAssemblyReference.cache
+C:\mydev\mynglzall\mynglz\Incyte\test1wcf\obj\Debug\test1wcf.dll
+C:\mydev\mynglzall\mynglz\Incyte\test1wcf\obj\Debug\test1wcf.pdb

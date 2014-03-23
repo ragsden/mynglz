@@ -1,0 +1,1 @@
+<%@ Application Codebehind="Global.asax.cs" Inherits="test1wcf.Global" Language="C#" %>
